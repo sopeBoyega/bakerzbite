@@ -1,13 +1,42 @@
-// Image imports
-import croissant from './Croissant.svg';
-import cupcake from './Cupcake.svg';
-import doubleChocolate from './Double Chocolate.svg';
-import emberrycake from './emberrycake.png';
-import emChocolate from './emChocolate.png';
+// Importing images and icons
+import galleryFive from './galleryFive.png';
+import galleryFour from './galleryFour.png';
+import galleryOne from './galleryOne.png';
+import gallerySix from './gallerySix.png';
+import galleryThree from './galleryThree.png';
+import galleryTwo from './galleryTwo.png';
+
+import githubIcon from './Github.png';
+import headerOne from './headerOne.png';
+import headerThree from './headerThree.png';
+import headerTwo from './headerTwo.png';
+
+import image2 from './image 2.png';
+import image6 from './image 6.png';
+import image8 from './image 8.png';
+import image9 from './image 9.png';
+import image1 from './image-1.png';
+import image from './image.png';
+
+import instagramIcon from './Instagram.png';
+import linkedinIcon from './LinkedIn.png';
+
+import merchBag from './merchBag.png';
+import merchCap from './merchCap.png';
+import merchPen from './merchPen.png';
+import merchShirt from './merchShirt.png';
+
+import ourProductsFive from './ourProductsFive.png';
+import ourProductsOne from './ourProductsOne.png';
+import ourProductsTwo from './ourProductsTwo.png';
+import ourProductsFour from './ourProductsFour.png';
+import ourProductsThree from './outProductsThree.png';
+
 import emGranola from './emGranola.png';
 import emRaspberry from './emRaspberry.png';
 import emStrawberry from './emStrawberry.png';
 import emVanilla from './emVanilla.png';
+
 import facebookIcon from './facebook.png';
 import fpbread1 from './fpbread1.png';
 import fpbread2 from './fpbread2.png';
@@ -15,12 +44,11 @@ import fpbread3 from './fpbread3.png';
 import fpbread4 from './fpbread4.png';
 import fpbread5 from './fpbread5.png';
 import fpbread6 from './fpbread6.png';
-import header from './header.png';
-import instagramIcon from './instagram.png';
+
 import pastelDeNata from './Pastel De Nata.svg';
 import pinterestIcon from './pintrest.png';
 import starIcon from './Star.svg';
-import toast from './Toast.svg';
+import toastIcon from './Toast.svg';
 import whatsappIcon from './whatsapp.png';
 
 
@@ -39,6 +67,75 @@ export const assets = {
   toast,
   whatsappIcon,
 };
+
+
+const merchItems = [
+    {
+      name: "Custom Tote Bag",
+      description: "Durable and stylish tote bag featuring our unique branding.",
+      price: 12.99,
+      image: merchBag,
+    },
+    {
+      name: "Branded Cap",
+      description: "Comfortable and adjustable cap with an embroidered logo.",
+      price: 9.99,
+      image: merchCap,
+    },
+    {
+      name: "Logo Pen",
+      description: "Sleek and professional pen with our company logo, perfect for everyday use.",
+      price: 2.99,
+      image: merchPen,
+    },
+    {
+      name: "Graphic T-Shirt",
+      description: "High-quality cotton t-shirt with an eye-catching design.",
+      price: 19.99,
+      image: merchShirt,
+    },
+  ];
+  
+  export default merchItems;
+
+export const bakeryGallery = [
+    {
+      name: "Chocolate Cake",
+      description: "A rich and moist chocolate cake topped with creamy chocolate ganache.",
+      price: 20.99,
+      image: galleryOne,
+    },
+    {
+      name: "Vanilla Cupcakes",
+      description: "Delicious vanilla cupcakes topped with buttercream frosting.",
+      price: 15.99,
+      image: galleryTwo,
+    },
+    {
+      name: "Cinnamon Rolls",
+      description: "Soft and fluffy cinnamon rolls drizzled with sweet glaze.",
+      price: 12.99,
+      image: galleryThree,
+    },
+    {
+      name: "Fruit Tart",
+      description: "A crispy tart shell filled with custard and topped with fresh seasonal fruits.",
+      price: 18.99,
+      image: galleryFour,
+    },
+    {
+      name: "Croissant",
+      description: "A flaky and buttery French pastry perfect for breakfast or a snack.",
+      price: 9.99,
+      image: galleryFive,
+    },
+    {
+      name: "Macarons",
+      description: "Colorful almond-based cookies with a variety of delicious fillings.",
+      price: 25.99,
+      image: gallerySix,
+    },
+  ];
 
 
 export const bakery_items = [
