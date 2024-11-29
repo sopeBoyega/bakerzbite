@@ -33,11 +33,12 @@ import ourProductsFour from './ourProductsFour.png';
 import ourProductsThree from './outProductsThree.png';
 
 import emGranola from './emGranola.png';
-import emRaspberry from './emRaspberry.png';
-import emStrawberry from './emStrawberry.png';
+import emRaspberry from './emRasberry.png';
+import emStrawberry from './emStrawbwerry.png';
 import emVanilla from './emVanilla.png';
+import emberrycake from './emberrycake.png';
 
-import facebookIcon from './facebook.png';
+import facebookIcon from './Facebook.png';
 import fpbread1 from './fpbread1.png';
 import fpbread2 from './fpbread2.png';
 import fpbread3 from './fpbread3.png';
@@ -50,21 +51,20 @@ import pinterestIcon from './pintrest.png';
 import starIcon from './Star.svg';
 import toastIcon from './Toast.svg';
 import whatsappIcon from './whatsapp.png';
-
+import doubleChocolate from './double_chocolate_cake.svg';
+import croissant from './Croissant.svg';
+import cupcake from './Cupcake.svg'
 
 
 // Exporting assets
-export const assets = {
-  croissant,
-  cupcake,
+export const assets ={
   doubleChocolate,
   facebookIcon,
-  header,
   instagramIcon,
   pastelDeNata,
   pinterestIcon,
   starIcon,
-  toast,
+  toastIcon,
   whatsappIcon,
 };
 
