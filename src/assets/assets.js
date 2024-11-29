@@ -31,7 +31,7 @@ import ourProductsOne from './ourProductsOne.png';
 import ourProductsTwo from './ourProductsTwo.png';
 import ourProductsFour from './ourProductsFour.png';
 import ourProductsThree from './outProductsThree.png';
-
+import itemCard from './item-card.png'
 import emGranola from './emGranola.png';
 import emRaspberry from './emRasberry.png';
 import emStrawberry from './emStrawbwerry.png';
@@ -66,6 +66,7 @@ export const assets ={
   starIcon,
   toastIcon,
   whatsappIcon,
+  itemCard
 };
 
 
