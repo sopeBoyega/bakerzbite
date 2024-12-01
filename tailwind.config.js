@@ -5,6 +5,9 @@ module.exports = {
       colors:{
         'bakerzBiteDarkBrown': '#4A1D1F',
         'bakerzBiteLightBrown': '#FBEDCD',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], 
       }
     },
   },

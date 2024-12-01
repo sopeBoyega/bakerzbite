@@ -7,9 +7,6 @@ import galleryThree from './galleryThree.png';
 import galleryTwo from './galleryTwo.png';
 
 import githubIcon from './Github.png';
-import headerOne from './headerOne.png';
-import headerThree from './headerThree.png';
-import headerTwo from './headerTwo.png';
 
 import image2 from './image 2.png';
 import image6 from './image 6.png';
@@ -17,6 +14,16 @@ import image8 from './image 8.png';
 import image9 from './image 9.png';
 import image1 from './image-1.png';
 import image from './image.png';
+
+import carouselOne from './carouselOne.png';
+import carouselTwo from './carouselTwo.png';
+import carouselThree from './carouselThree.png';
+import carouselFour from './carouselFour.png';
+import carouselFive from './carouselFive.png';
+import carouselSix from './carouselSix.png';
+import carouselSeven from './carouselSeven.png';
+import carouselEight from './carouselEight.png';
+import carouselNine from './carouselNine.png';
 
 import instagramIcon from './Instagram.png';
 import linkedinIcon from './LinkedIn.png';
@@ -37,7 +44,8 @@ import emRaspberry from './emRasberry.png';
 import emStrawberry from './emStrawbwerry.png';
 import emVanilla from './emVanilla.png';
 import emberrycake from './emberrycake.png';
-
+import chocoCake from './chocoCake.png';
+import introPicture from './Rectangle 34.png'
 import facebookIcon from './Facebook.png';
 import fpbread1 from './fpbread1.png';
 import fpbread2 from './fpbread2.png';
@@ -66,11 +74,27 @@ export const assets ={
   starIcon,
   toastIcon,
   whatsappIcon,
-  itemCard
+  itemCard,
+  chocoCake,
+  linkedinIcon,
+  githubIcon,
+  introPicture
 };
 
+export const carousel = [
+  { image: carouselOne },
+  { image: carouselTwo },
+  { image: carouselThree },
+  { image: carouselFour },
+  { image: carouselFive },
+  { image: carouselSix },
+  { image: carouselSeven },
+  { image: carouselEight },
+  { image: carouselNine },
+];
 
-const merchItems = [
+
+export const merchItems = [
     {
       name: "Custom Tote Bag",
       description: "Durable and stylish tote bag featuring our unique branding.",
@@ -97,7 +121,7 @@ const merchItems = [
     },
   ];
   
-  export default merchItems;
+  
 
 export const bakeryGallery = [
     {
@@ -137,6 +161,34 @@ export const bakeryGallery = [
       image: gallerySix,
     },
   ];
+
+export const productsCarousel =[
+  {
+    image:ourProductsOne,
+    productName:"Red Velvet & Cream Cheese (500g)",
+    rating:4.0,
+  },
+  {
+    image:ourProductsTwo,
+    productName:"Red Velvet & Cream Cheese (500g)",
+    rating:4.0,
+  },
+  {
+    image:ourProductsThree,
+    productName:"Red Velvet & Cream Cheese (500g)",
+    rating:4.0,
+  },
+  {
+    image:ourProductsFour,
+    productName:"Red Velvet & Cream Cheese (500g)",
+    rating:4.0,
+  },
+  {
+    image:ourProductsFive,
+    productName:"Red Velvet & Cream Cheese (500g)",
+    rating:4.0,
+  },
+] 
 
 
 export const bakery_items = [

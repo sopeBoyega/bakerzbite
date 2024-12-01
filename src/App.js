@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import About from './pages/about';
 import Contact from './pages/contact'
 import Gallery from './pages/gallery';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
 <Navbar/>
      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About%20Us" element={<About />} />
+        <Route path="/About" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
