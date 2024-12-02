@@ -5,7 +5,7 @@ const Introduction = () => {
   return (
     <div className="flex flex-col w-[100%] h-[950px] justify-center items-center ">
       <div className="flex flex-col items-center justify-start w-full h-[45%] lg:flex-row lg:justify-between lg:mt-13">
-        <div className="flex flex-col gap-2 pl-[30px] mt-[10px] items-center h-full lg:justify-start">
+        <div className="flex flex-col gap-2 pl-[30px] mt-[10px] items-center h-full lg:justify-start lg:items-start">
           <p className="font-medium  text-[23px] mb-[10px] text-bakerzBiteDarkBrown md:mr-[80px] lg:text-[40px]">
             We Bake for you Fresh From the oven
           </p>
@@ -32,7 +32,7 @@ const Introduction = () => {
       </div>
 
       <div className="flex flex-col-reverse items-center justify-start w-full h-[45%] lg:flex-row-reverse lg:justify-center lg:mt-13">
-        <div className="flex flex-col gap-2 pl-[0px] mt-[10px] items-center h-full lg:justify-start lg:pl-[7px] lg:pt-5">
+        <div className="flex flex-col gap-2 pl-[0px] mt-[10px] items-center h-full lg:justify-start lg:items-start lg:pl-[7px] lg:pt-5">
           <p className="font-medium  text-[23px] mb-[10px] text-bakerzBiteDarkBrown md:mr-[100px] lg:text-[40px]">
             Come and choose your favourites
           </p>

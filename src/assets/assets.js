@@ -5,7 +5,8 @@ import galleryOne from './galleryOne.png';
 import gallerySix from './gallerySix.png';
 import galleryThree from './galleryThree.png';
 import galleryTwo from './galleryTwo.png';
-
+import openingQuote from './openingQuote.svg'
+import closingQuote from './closingQuote.svg'
 import githubIcon from './Github.png';
 
 import image2 from './image 2.png';
@@ -32,6 +33,7 @@ import merchBag from './merchBag.png';
 import merchCap from './merchCap.png';
 import merchPen from './merchPen.png';
 import merchShirt from './merchShirt.png';
+import merchCup from './merchCup.png';
 
 import ourProductsFive from './ourProductsFive.png';
 import ourProductsOne from './ourProductsOne.png';
@@ -53,6 +55,7 @@ import fpbread3 from './fpbread3.png';
 import fpbread4 from './fpbread4.png';
 import fpbread5 from './fpbread5.png';
 import fpbread6 from './fpbread6.png';
+import profilepic from './Ellipse 1.png'
 
 import pastelDeNata from './Pastel De Nata.svg';
 import pinterestIcon from './pintrest.png';
@@ -78,7 +81,10 @@ export const assets ={
   chocoCake,
   linkedinIcon,
   githubIcon,
-  introPicture
+  introPicture,
+  openingQuote,
+  closingQuote,
+  profilepic
 };
 
 export const carousel = [
@@ -118,6 +124,12 @@ export const merchItems = [
       description: "High-quality cotton t-shirt with an eye-catching design.",
       price: 19.99,
       image: merchShirt,
+    },
+    {
+      name: "Branded Mug",
+      description: "High-quality Cup with an eye-catching design.",
+      price: 19.99,
+      image: merchCup,
     },
   ];
   
