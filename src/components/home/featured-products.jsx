@@ -1,8 +1,11 @@
 import React from "react";
 import { productsCarousel } from "../../assets/assets";
 import StarRating from "./star-rating";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
+const navigate = useNavigate()
+
   return (
     <div className="flex flex-col  my-[80px] gap h-[34vw] ">
       <div className="flex flex-col m-[30px] items-center justify-center md:flex-row ">
@@ -33,7 +36,12 @@ const Products = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-center w-full mt-[45px]"><button className='bg-transparent border border-bakerzBiteDarkBrown rounded-[4px] w-[156px] h-[40px]'>See All Menus</button></div>
+      <div className="flex items-center justify-center w-full mt-[45px]">
+        <button className="bg-transparent border border-bakerzBiteDarkBrown rounded-[4px] w-[156px] h-[40px]"
+        onClick={()=>navigate('/gallery')}>
+          See All Menus
+        </button>
+      </div>
     </div>
   );
 };
