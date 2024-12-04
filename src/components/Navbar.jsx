@@ -11,7 +11,11 @@ const Navbar = () => {
   return (
     <div className=" h-[65px] p-5 w-[100vw]  z-10 flex justify-between  items-center bg-white fixed  top-0 left-0 right-0 ">
       <div className="flex flex-row items-center">
-        <p className="text-bakerzBiteDarkBrown  text-[20px] font-medium">
+       
+        <Link
+        to='/'
+        className="flex flex-row">
+           <p className="text-bakerzBiteDarkBrown  text-[20px] font-medium">
           BakerzBite
         </p>
         <img
@@ -19,6 +23,7 @@ const Navbar = () => {
           alt="Logo"
           className="w-[35px] h-[35px]"
         />
+        </Link>
       </div>
      
       <div>
@@ -36,8 +41,10 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex flex-row items-center justify-center mr-10 mb-3">
-        <p className="font-light text-center text-[10px]">Current Page:{activeMenu}</p>
+
+
+      <div className=" hidden lg:flex flex-row items-center justify-center mr-10 mb-3">
+        <p className=" font-light text-center text-[10px]">Visitor's Count:</p>
       </div>
     </div>
   );

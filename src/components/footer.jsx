@@ -1,10 +1,12 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import BottomTicker from "./home/scrolliing-ticker";
 
 const Footer = () => {
     const  footerLinks =["Site Map","Gallery","About Us","Contact Us","FAQ Link"]
   return (
     <div className="w-[100vw] flex flex-col mt-[100px] py-[80px]  bg-bakerzBiteLightBrown h-[300px]">
+      <BottomTicker/>
       <div className="flex flex-row mx-[8vw] items-center justify-between ">
         <div className="flex flex-row items-center">
           <p className="text-bakerzBiteDarkBrown  text-[20px] font-medium">
