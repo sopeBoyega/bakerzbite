@@ -1,20 +1,8 @@
 // Importing images and icons
-import galleryFive from './galleryFive.png';
-import galleryFour from './galleryFour.png';
-import galleryOne from './galleryOne.png';
-import gallerySix from './gallerySix.png';
-import galleryThree from './galleryThree.png';
-import galleryTwo from './galleryTwo.png';
 import openingQuote from './openingQuote.svg'
 import closingQuote from './closingQuote.svg'
 import githubIcon from './Github.png';
 
-import image2 from './image 2.png';
-import image6 from './image 6.png';
-import image8 from './image 8.png';
-import image9 from './image 9.png';
-import image1 from './image-1.png';
-import image from './image.png';
 
 import carouselOne from './carouselOne.png';
 import carouselTwo from './carouselTwo.png';
@@ -25,6 +13,32 @@ import carouselSix from './carouselSix.png';
 import carouselSeven from './carouselSeven.png';
 import carouselEight from './carouselEight.png';
 import carouselNine from './carouselNine.png';
+
+import cakeOne from './cakeOne.png';
+import cakeTwo from './cakeTwo.png';
+import cakeThree from './cakeThree.png';
+import cakeFour from './cakeFour.png';
+import cakeFive from './cakeFive.png';
+import cakeSix from './cakeSix.png';
+import cakeSeven from './cakeSeven.png';
+import cakeEight from './cakeEight.png';
+import cakeNine from './cakeNine.png';
+import cakeTen from './cakeTen.png';
+import cookieOne from './cookieOne.png';
+import cookieTwo from './cookieTwo.png';
+import cookieThree from './cookieThree.png';
+import cookieFour from './cookieFour.png';
+import cookieFive from './cookieFive.png';
+import pieOne from './pieOne.png';
+import pieTwo from './pieTwo.png';
+import pieThree from './pieThree.png';
+import pieFour from './pieFour.png';
+import pieFive from './pieFive.png';
+import pastryOne from './pastryOne.png';
+import pastryTwo from './pastryTwo.png';
+import pastryThree from './pastryThree.png';
+import pastryFive from './pastryFive.png';
+import pastrySix from './pastrySix.png';
 
 import instagramIcon from './Instagram.png';
 import linkedinIcon from './LinkedIn.png';
@@ -40,21 +54,9 @@ import ourProductsOne from './ourProductsOne.png';
 import ourProductsTwo from './ourProductsTwo.png';
 import ourProductsFour from './ourProductsFour.png';
 import ourProductsThree from './outProductsThree.png';
-import itemCard from './item-card.png'
-import emGranola from './emGranola.png';
-import emRaspberry from './emRasberry.png';
-import emStrawberry from './emStrawbwerry.png';
-import emVanilla from './emVanilla.png';
-import emberrycake from './emberrycake.png';
 import chocoCake from './chocoCake.png';
 import introPicture from './Rectangle 34.png'
 import facebookIcon from './Facebook.png';
-import fpbread1 from './fpbread1.png';
-import fpbread2 from './fpbread2.png';
-import fpbread3 from './fpbread3.png';
-import fpbread4 from './fpbread4.png';
-import fpbread5 from './fpbread5.png';
-import fpbread6 from './fpbread6.png';
 import profilepic from './Ellipse 1.png'
 
 import pastelDeNata from './Pastel De Nata.svg';
@@ -66,6 +68,8 @@ import doubleChocolate from './double_chocolate_cake.svg';
 import croissant from './Croissant.svg';
 import cupcake from './Cupcake.svg'
 
+const randomPrice = () => (Math.random() * 50 + 10).toFixed(2); // Random price between $10 and $60
+const randomDiscount = () => (Math.random() > 0.5 ? `${Math.floor(Math.random() * 30 + 10)}%` : ''); // Random discount (10-40%) or empty
 
 // Exporting assets
 export const assets ={
@@ -77,7 +81,6 @@ export const assets ={
   starIcon,
   toastIcon,
   whatsappIcon,
-  itemCard,
   chocoCake,
   linkedinIcon,
   githubIcon,
@@ -135,44 +138,34 @@ export const merchItems = [
   
   
 
-export const bakeryGallery = [
-    {
-      name: "Chocolate Cake",
-      description: "A rich and moist chocolate cake topped with creamy chocolate ganache.",
-      price: 20.99,
-      image: galleryOne,
-    },
-    {
-      name: "Vanilla Cupcakes",
-      description: "Delicious vanilla cupcakes topped with buttercream frosting.",
-      price: 15.99,
-      image: galleryTwo,
-    },
-    {
-      name: "Cinnamon Rolls",
-      description: "Soft and fluffy cinnamon rolls drizzled with sweet glaze.",
-      price: 12.99,
-      image: galleryThree,
-    },
-    {
-      name: "Fruit Tart",
-      description: "A crispy tart shell filled with custard and topped with fresh seasonal fruits.",
-      price: 18.99,
-      image: galleryFour,
-    },
-    {
-      name: "Croissant",
-      description: "A flaky and buttery French pastry perfect for breakfast or a snack.",
-      price: 9.99,
-      image: galleryFive,
-    },
-    {
-      name: "Macarons",
-      description: "Colorful almond-based cookies with a variety of delicious fillings.",
-      price: 25.99,
-      image: gallerySix,
-    },
-  ];
+// Array of  galleryobjects
+const products = [
+  { name: 'Cake Delight', price: randomPrice(), discount: randomDiscount(), image: cakeOne, category: 'cake' },
+  { name: 'Sweet Berry Cake', price: randomPrice(), discount: randomDiscount(), image: cakeTwo, category: 'cake' },
+  { name: 'Chocolate Heaven', price: randomPrice(), discount: randomDiscount(), image: cakeThree, category: 'cake' },
+  { name: 'Vanilla Swirl', price: randomPrice(), discount: randomDiscount(), image: cakeFour, category: 'cake' },
+  { name: 'Layered Fantasy', price: randomPrice(), discount: randomDiscount(), image: cakeFive, category: 'cake' },
+  { name: 'Choco Burst', price: randomPrice(), discount: randomDiscount(), image: cakeSix, category: 'cake' },
+  { name: 'Fruit Topped Cake', price: randomPrice(), discount: randomDiscount(), image: cakeSeven, category: 'cake' },
+  { name: 'Red Velvet Love', price: randomPrice(), discount: randomDiscount(), image: cakeEight, category: 'cake' },
+  { name: 'Berrylicious', price: randomPrice(), discount: randomDiscount(), image: cakeNine, category: 'cake' },
+  { name: 'Sprinkle Joy', price: randomPrice(), discount: randomDiscount(), image: cakeTen, category: 'cake' },
+  { name: 'Cookie Crunch', price: randomPrice(), discount: randomDiscount(), image: cookieOne, category: 'cookie' },
+  { name: 'Double Choco Cookie', price: randomPrice(), discount: randomDiscount(), image: cookieTwo, category: 'cookie' },
+  { name: 'Oatmeal Treat', price: randomPrice(), discount: randomDiscount(), image: cookieThree, category: 'cookie' },
+  { name: 'Sugar Bliss', price: randomPrice(), discount: randomDiscount(), image: cookieFour, category: 'cookie' },
+  { name: 'Choco Chip Supreme', price: randomPrice(), discount: randomDiscount(), image: cookieFive, category: 'cookie' },
+  { name: 'Classic Apple Pie', price: randomPrice(), discount: randomDiscount(), image: pieOne, category: 'pie' },
+  { name: 'Berry Blast Pie', price: randomPrice(), discount: randomDiscount(), image: pieTwo, category: 'pie' },
+  { name: 'Golden Crust Pie', price: randomPrice(), discount: randomDiscount(), image: pieThree, category: 'pie' },
+  { name: 'Raspberry Delight Pie', price: randomPrice(), discount: randomDiscount(), image: pieFour, category: 'pie' },
+  { name: 'Cherry Glaze Pie', price: randomPrice(), discount: randomDiscount(), image: pieFive, category: 'pie' },
+  { name: 'Croissant Classic', price: randomPrice(), discount: randomDiscount(), image: pastryOne, category: 'pastry' },
+  { name: 'Almond Danish', price: randomPrice(), discount: randomDiscount(), image: pastryTwo, category: 'pastry' },
+  { name: 'Choco Twist', price: randomPrice(), discount: randomDiscount(), image: pastryThree, category: 'pastry' },
+  { name: 'Berry Danish', price: randomPrice(), discount: randomDiscount(), image: pastryFive, category: 'pastry' },
+  { name: 'Golden Croissant', price: randomPrice(), discount: randomDiscount(), image: pastrySix, category: 'pastry' },
+];
 
 export const productsCarousel =[
   {
@@ -203,101 +196,3 @@ export const productsCarousel =[
 ] 
 
 
-export const bakery_items = [
-    {
-        _id: "1",
-        name: "Chocolate Croissant",
-        image: croissant,
-        price: 5,
-        description: "Flaky and buttery croissant filled with rich chocolate.",
-        category: "Pastry"
-    },
-    {
-        _id: "2",
-        name: "Vanilla Cupcake",
-        image: cupcake,
-        price: 3,
-        description: "Soft and fluffy cupcake topped with creamy vanilla frosting.",
-        category: "Cupcake"
-    },
-    {
-        _id: "3",
-        name: "Double Chocolate Muffin",
-        image: doubleChocolate,
-        price: 4,
-        description: "Decadent muffin packed with chocolate chunks and cocoa.",
-        category: "Muffin"
-    },
-    {
-        _id: "4",
-        name: "Berry Cheesecake",
-        image: emberrycake,
-        price: 8,
-        description: "Creamy cheesecake topped with fresh berry compote.",
-        category: "Cake"
-    },
-    {
-        _id: "5",
-        name: "Granola Bread",
-        image: emGranola,
-        price: 6,
-        description: "Healthy whole-grain bread with crunchy granola topping.",
-        category: "Bread"
-    },
-    {
-        _id: "6",
-        name: "Raspberry Tart",
-        image: emRaspberry,
-        price: 7,
-        description: "Sweet and tangy tart with a buttery crust and raspberry filling.",
-        category: "Pastry"
-    },
-    {
-        _id: "7",
-        name: "Vanilla Macarons",
-        image: emVanilla,
-        price: 10,
-        description: "Delicate almond-based cookies with vanilla buttercream filling.",
-        category: "Cookie"
-    },
-    {
-        _id: "8",
-        name: "Strawberry Shortcake",
-        image: emStrawberry,
-        price: 9,
-        description: "Classic dessert with layers of shortcake, strawberries, and cream.",
-        category: "Cake"
-    },
-    {
-        _id: "9",
-        name: "Rustic Sourdough Bread",
-        image: fpbread1,
-        price: 5,
-        description: "Artisan sourdough bread with a crisp crust and soft center.",
-        category: "Bread"
-    },
-    {
-        _id: "10",
-        name: "Butter Croissant",
-        image: fpbread2,
-        price: 4,
-        description: "Golden and buttery croissant, perfect for breakfast.",
-        category: "Pastry"
-    },
-    {
-        _id: "11",
-        name: "Chocolate Chip Cookies",
-        image: fpbread3,
-        price: 3,
-        description: "Classic cookies loaded with gooey chocolate chips.",
-        category: "Cookie"
-    },
-    {
-        _id: "12",
-        name: "Pastel de Nata",
-        image: pastelDeNata,
-        price: 5,
-        description: "Traditional Portuguese custard tart with a flaky crust.",
-        category: "Pastry"
-    }
-];
