@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 
 const Introduction = () => {
   return (
-    <div className="flex flex-col w-[100%] h-[950px] justify-center items-center ">
+    <div className="flex flex-col w-[100%] h-[950px] justify-center items-center  ">
       <div className="flex flex-col items-center justify-start w-full h-[45%] lg:flex-row lg:justify-between lg:mt-13">
         <div className="flex flex-col gap-2 pl-[30px] mt-[10px] items-center h-full lg:justify-start lg:items-start">
           <p className="font-medium  text-[23px] mb-[10px] text-bakerzBiteDarkBrown md:mr-[80px] lg:text-[40px]">

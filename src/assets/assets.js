@@ -65,7 +65,9 @@ import starIcon from './Star.svg';
 import toastIcon from './Toast.svg';
 import whatsappIcon from './whatsapp.png';
 import doubleChocolate from './double_chocolate_cake.svg';
+// eslint-disable-next-line
 import croissant from './Croissant.svg';
+// eslint-disable-next-line
 import cupcake from './Cupcake.svg'
 
 const randomPrice = () => (Math.random() * 50 + 10).toFixed(2); // Random price between $10 and $60
@@ -102,7 +104,7 @@ export const carousel = [
   { image: carouselNine },
 ];
 
-
+// Our Merch Items
 export const merchItems = [
     {
       name: "Custom Tote Bag",
@@ -138,34 +140,210 @@ export const merchItems = [
   
   
 
-// Array of  galleryobjects
-const products = [
-  { name: 'Cake Delight', price: randomPrice(), discount: randomDiscount(), image: cakeOne, category: 'cake' },
-  { name: 'Sweet Berry Cake', price: randomPrice(), discount: randomDiscount(), image: cakeTwo, category: 'cake' },
-  { name: 'Chocolate Heaven', price: randomPrice(), discount: randomDiscount(), image: cakeThree, category: 'cake' },
-  { name: 'Vanilla Swirl', price: randomPrice(), discount: randomDiscount(), image: cakeFour, category: 'cake' },
-  { name: 'Layered Fantasy', price: randomPrice(), discount: randomDiscount(), image: cakeFive, category: 'cake' },
-  { name: 'Choco Burst', price: randomPrice(), discount: randomDiscount(), image: cakeSix, category: 'cake' },
-  { name: 'Fruit Topped Cake', price: randomPrice(), discount: randomDiscount(), image: cakeSeven, category: 'cake' },
-  { name: 'Red Velvet Love', price: randomPrice(), discount: randomDiscount(), image: cakeEight, category: 'cake' },
-  { name: 'Berrylicious', price: randomPrice(), discount: randomDiscount(), image: cakeNine, category: 'cake' },
-  { name: 'Sprinkle Joy', price: randomPrice(), discount: randomDiscount(), image: cakeTen, category: 'cake' },
-  { name: 'Cookie Crunch', price: randomPrice(), discount: randomDiscount(), image: cookieOne, category: 'cookie' },
-  { name: 'Double Choco Cookie', price: randomPrice(), discount: randomDiscount(), image: cookieTwo, category: 'cookie' },
-  { name: 'Oatmeal Treat', price: randomPrice(), discount: randomDiscount(), image: cookieThree, category: 'cookie' },
-  { name: 'Sugar Bliss', price: randomPrice(), discount: randomDiscount(), image: cookieFour, category: 'cookie' },
-  { name: 'Choco Chip Supreme', price: randomPrice(), discount: randomDiscount(), image: cookieFive, category: 'cookie' },
-  { name: 'Classic Apple Pie', price: randomPrice(), discount: randomDiscount(), image: pieOne, category: 'pie' },
-  { name: 'Berry Blast Pie', price: randomPrice(), discount: randomDiscount(), image: pieTwo, category: 'pie' },
-  { name: 'Golden Crust Pie', price: randomPrice(), discount: randomDiscount(), image: pieThree, category: 'pie' },
-  { name: 'Raspberry Delight Pie', price: randomPrice(), discount: randomDiscount(), image: pieFour, category: 'pie' },
-  { name: 'Cherry Glaze Pie', price: randomPrice(), discount: randomDiscount(), image: pieFive, category: 'pie' },
-  { name: 'Croissant Classic', price: randomPrice(), discount: randomDiscount(), image: pastryOne, category: 'pastry' },
-  { name: 'Almond Danish', price: randomPrice(), discount: randomDiscount(), image: pastryTwo, category: 'pastry' },
-  { name: 'Choco Twist', price: randomPrice(), discount: randomDiscount(), image: pastryThree, category: 'pastry' },
-  { name: 'Berry Danish', price: randomPrice(), discount: randomDiscount(), image: pastryFive, category: 'pastry' },
-  { name: 'Golden Croissant', price: randomPrice(), discount: randomDiscount(), image: pastrySix, category: 'pastry' },
+// Our Array of Products
+export const products = [
+  { 
+    name: 'Cake Delight', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeOne, 
+    category: 'cake', 
+    ingredients: ['Flour', 'Sugar', 'Eggs', 'Butter', 'Vanilla Extract']
+  },
+  { 
+    name: 'Sweet Berry Cake', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeTwo, 
+    category: 'cake', 
+    ingredients: ['Flour', 'Sugar', 'Berries', 'Cream', 'Butter']
+  },
+  { 
+    name: 'Chocolate Heaven', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeThree, 
+    category: 'cake', 
+    ingredients: ['Cocoa Powder', 'Sugar', 'Butter', 'Eggs', 'Flour']
+  },
+  { 
+    name: 'Vanilla Swirl', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeFour, 
+    category: 'cake', 
+    ingredients: ['Vanilla Extract', 'Flour', 'Eggs', 'Milk', 'Sugar']
+  },
+  { 
+    name: 'Layered Fantasy', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeFive, 
+    category: 'cake', 
+    ingredients: ['Whipped Cream', 'Chocolate Ganache', 'Flour', 'Eggs', 'Sugar']
+  },
+  { 
+    name: 'Choco Burst', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeSix, 
+    category: 'cake', 
+    ingredients: ['Chocolate', 'Butter', 'Sugar', 'Flour', 'Eggs']
+  },
+  { 
+    name: 'Fruit Topped Cake', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeSeven, 
+    category: 'cake', 
+    ingredients: ['Mixed Fruits', 'Whipped Cream', 'Flour', 'Sugar', 'Butter']
+  },
+  { 
+    name: 'Red Velvet Love', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeEight, 
+    category: 'cake', 
+    ingredients: ['Cocoa Powder', 'Red Food Coloring', 'Butter', 'Sugar', 'Cream Cheese']
+  },
+  { 
+    name: 'Berrylicious', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeNine, 
+    category: 'cake', 
+    ingredients: ['Mixed Berries', 'Whipped Cream', 'Flour', 'Sugar', 'Butter']
+  },
+  { 
+    name: 'Sprinkle Joy', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cakeTen, 
+    category: 'cake', 
+    ingredients: ['Sprinkles', 'Buttercream Frosting', 'Flour', 'Sugar', 'Eggs']
+  },
+  { 
+    name: 'Cookie Crunch', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cookieOne, 
+    category: 'cookie', 
+    ingredients: ['Chocolate Chips', 'Butter', 'Sugar', 'Flour', 'Eggs']
+  },
+  { 
+    name: 'Double Choco Cookie', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cookieTwo, 
+    category: 'cookie', 
+    ingredients: ['Dark Chocolate', 'Cocoa Powder', 'Butter', 'Sugar', 'Flour']
+  },
+  { 
+    name: 'Oatmeal Treat', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cookieThree, 
+    category: 'cookie', 
+    ingredients: ['Oats', 'Raisins', 'Brown Sugar', 'Butter', 'Flour']
+  },
+  { 
+    name: 'Sugar Bliss', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cookieFour, 
+    category: 'cookie', 
+    ingredients: ['Sugar', 'Butter', 'Flour', 'Vanilla Extract', 'Eggs']
+  },
+  { 
+    name: 'Choco Chip Supreme', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: cookieFive, 
+    category: 'cookie', 
+    ingredients: ['Chocolate Chips', 'Brown Sugar', 'Butter', 'Flour', 'Eggs']
+  },
+  { 
+    name: 'Classic Apple Pie', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pieOne, 
+    category: 'pie', 
+    ingredients: ['Apples', 'Cinnamon', 'Sugar', 'Pie Crust', 'Butter']
+  },
+  { 
+    name: 'Berry Blast Pie', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pieTwo, 
+    category: 'pie', 
+    ingredients: ['Mixed Berries', 'Sugar', 'Pie Crust', 'Butter', 'Lemon Juice']
+  },
+  { 
+    name: 'Golden Crust Pie', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pieThree, 
+    category: 'pie', 
+    ingredients: ['Pie Crust', 'Brown Sugar', 'Butter', 'Cinnamon', 'Vanilla']
+  },
+  { 
+    name: 'Raspberry Delight Pie', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pieFour, 
+    category: 'pie', 
+    ingredients: ['Raspberries', 'Sugar', 'Pie Crust', 'Cornstarch', 'Butter']
+  },
+  { 
+    name: 'Cherry Glaze Pie', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pieFive, 
+    category: 'pie', 
+    ingredients: ['Cherries', 'Sugar', 'Cornstarch', 'Pie Crust', 'Butter']
+  },
+  { 
+    name: 'Croissant Classic', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pastryOne, 
+    category: 'pastry', 
+    ingredients: ['Butter', 'Flour', 'Yeast', 'Milk', 'Salt']
+  },
+  { 
+    name: 'Almond Danish', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pastryTwo, 
+    category: 'pastry', 
+    ingredients: ['Almond Paste', 'Butter', 'Flour', 'Milk', 'Sugar']
+  },
+  { 
+    name: 'Choco Twist', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pastryThree, 
+    category: 'pastry', 
+    ingredients: ['Chocolate', 'Butter', 'Flour', 'Milk', 'Sugar']
+  },
+  { 
+    name: 'Berry Danish', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pastryFive, 
+    category: 'pastry', 
+    ingredients: ['Mixed Berries', 'Butter', 'Flour', 'Milk', 'Sugar']
+  },
+  { 
+    name: 'Golden Croissant', 
+    price: randomPrice(), 
+    discount: randomDiscount(), 
+    image: pastrySix, 
+    category: 'pastry', 
+    ingredients: ['Butter', 'Flour', 'Yeast', 'Milk', 'Sugar']
+  },
 ];
+
 
 export const productsCarousel =[
   {

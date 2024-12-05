@@ -7,6 +7,7 @@ import Contact from './pages/contact';
 import Gallery from './pages/gallery';
 import Footer from './components/footer';
 import Sidebar from './components/sidebar';
+import BottomTicker from './components/home/scrolling-ticker';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="">
 <Navbar/>
+<BottomTicker/>
 <Sidebar listItems={listItems} /> {/* Sidebar Available Globally */}
      <Routes>
         <Route path="/" element={<Home />} />
