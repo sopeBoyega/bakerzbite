@@ -22,10 +22,10 @@ const navigate = useNavigate()
           other creations.
         </p>
       </div>
-      <div className=" hidden  lg:flex flex-row gap-20  ml-[75px] mt-[50px]  ">
+      <div className=" hidden  lg:flex flex-row gap-20  ml-[75px] mt-[50px]   ">
         {productsCarousel.map((item, key) => (
           <div className="flex flex-col  items-center justify-center ">
-            <img src={item.image} alt="" className="w-[300px] h-[200px]" />
+            <img src={item.image} alt="" className="w-[231px] h-[328px]" />
             <p>{item.productName}</p>
             <div className="flex flex-row items-center  justify-between w-full ">
               <StarRating rating={item.rating} />
@@ -36,7 +36,7 @@ const navigate = useNavigate()
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-center w-full mt-[45px]">
+      <div className="flex items-center justify-center w-full mt-[45px] mb-[50px] md:hidden lg:flex">
         <button className="bg-transparent border border-bakerzBiteDarkBrown rounded-[4px] w-[156px] h-[40px]"
         onClick={()=>navigate('/gallery')}>
           See All Menus

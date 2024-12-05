@@ -9,7 +9,7 @@ const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState("Home");
 
   return (
-    <div className=" h-[65px] p-5 w-[100vw]  z-10 flex justify-between  items-center bg-white fixed  top-0 left-0 right-0 ">
+    <div className=" h-[45px] p-5 w-[100vw]  z-[10] flex justify-between  items-center bg-white fixed  top-0 left-0 right-0 ">
       <div className="flex flex-row items-center">
        
         <Link

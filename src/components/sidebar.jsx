@@ -8,7 +8,7 @@ const Sidebar = ({ listItems }) => {
     <>
       {/* Sidebar Toggle Button */}
       <button
-        className="fixed top-5 right-5 z-20 bg-[#4A1D1F] text-[#FBEDCD] font-medium text-[16px] px-4 py-2 rounded-md md:hidden"
+        className="fixed top-2 right-5 z-[100] bg-[#4A1D1F] text-[#FBEDCD] font-medium text-[12px] px-4 py-2 rounded-md md:hidden"
         onClick={() => setShowSidebar(true)} // Show sidebar
       >
         ☰ Menu

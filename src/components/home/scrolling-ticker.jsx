@@ -13,7 +13,7 @@ const BottomTicker = () => {
           setLocation(`Lat: ${latitude.toFixed(2)}, Lon: ${longitude.toFixed(2)}`);
         },
         (error) => {
-          setLocation("Unable to fetch location");
+          setLocation("Unable to fetch location.Please Connect to the Internet or Allow the site to use your Location");
         }
       );
     } else {
@@ -32,7 +32,7 @@ const BottomTicker = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white py-2">
+    <div className="fixed bottom-0 left-0 w-full z-50 bg-bakerzBiteDarkBrown text-white py-2">
       <div className="whitespace-nowrap flex animate-scroll">
         <span className="mr-8 text-lg">
           📅 Date & Time: {dateTime}
