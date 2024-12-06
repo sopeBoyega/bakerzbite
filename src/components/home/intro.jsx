@@ -5,8 +5,8 @@ const Introduction = () => {
   return (
     <div className="flex flex-col w-[100%] h-[950px] justify-center items-center  ">
       <div className="flex flex-col items-center justify-start w-full h-[45%] lg:flex-row lg:justify-between lg:mt-13">
-        <div className="flex flex-col gap-2 pl-[30px] mt-[10px] items-center h-full lg:justify-start lg:items-start">
-          <p className="font-medium  text-[23px] mb-[10px] text-bakerzBiteDarkBrown md:mr-[80px] lg:text-[40px]">
+        <div className="flex flex-col gap-2 pl-[30px] mt-[10px] items-center justify-center h-full lg:justify-start lg:items-start">
+          <p className="font-medium text-center  text-[23px] mb-[10px] text-bakerzBiteDarkBrown md:mr-[80px] lg:text-[40px]">
             We Bake for you Fresh From the oven
           </p>
           <p className=" text-center text-[19px] mb-[10px] text-[#272727]  lg:w-[500px] lg:text-start">
@@ -33,7 +33,7 @@ const Introduction = () => {
 
       <div className="flex flex-col-reverse items-center justify-start w-full h-[45%] lg:flex-row-reverse lg:justify-center lg:mt-13">
         <div className="flex flex-col gap-2 pl-[0px] mt-[10px] items-center h-full lg:justify-start lg:items-start lg:pl-[7px] lg:pt-5">
-          <p className="font-medium  text-[23px] mb-[10px] text-bakerzBiteDarkBrown md:mr-[100px] lg:text-[40px]">
+          <p className="font-medium text-center text-[23px] mb-[10px] text-bakerzBiteDarkBrown md:mr-[100px] lg:text-[40px]">
             Come and choose your favourites
           </p>
           <p className=" text-center text-[19px] mb-[10px] text-[#272727]  lg:w-[600px] lg:text-start ">

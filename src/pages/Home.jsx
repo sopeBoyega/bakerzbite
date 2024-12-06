@@ -10,6 +10,7 @@ const Home = () => {
   <Header/>
   {/* Change the carousel for Products page to be responsive */}
    <Products/>
+   <div className="h-[50px]"></div>
    <Introduction/>
    <Merchandise/>
    <Reviews/>
