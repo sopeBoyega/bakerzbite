@@ -37,7 +37,7 @@ const navigate = useNavigate()
         ))}
       </div>
       <div className="flex items-center justify-center w-full mt-[45px] mb-[50px] md:hidden lg:flex">
-        <button className="bg-transparent border border-bakerzBiteDarkBrown rounded-[4px] w-[156px] h-[40px]"
+        <button className="lg:hidden  bg-transparent border border-bakerzBiteDarkBrown rounded-[4px] w-[156px] h-[40px]"
         onClick={()=>navigate('/gallery')}>
           See All Menus
         </button>

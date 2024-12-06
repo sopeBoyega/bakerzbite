@@ -13,7 +13,7 @@ const Header = () => {
             BakerzBite
           </p>
         </div>
-        <p className="font-sans  text-[24px]  text-bakerzBiteDarkBrown">
+        <p className="font-sans  text-center  text-[24px]  text-bakerzBiteDarkBrown">
           Where Smiles are Served Daily
         </p>
         <div className="flex mt-5 flex-row gap-1 md:mt-10">

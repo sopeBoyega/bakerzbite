@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Filter from "../components/gallery/filter";
 import Products from "../components/gallery/products-display";
+import Menu from "../components/filter-phone";
+import FilterPhone from "../components/filter-phone";
 
 const Gallery = () => {
   const [category, setCategory] = useState("All");
@@ -17,7 +19,10 @@ const Gallery = () => {
       </p>
       <div className="w-full h-fit  flex-col flex pt-[10px] items-center justify-center
        bg-white">
-      <Filter category={category} setCategory={setCategory}/>
+       <div className="flex w-full justify-end items-end lg:justify-center">
+       <Filter category={category} setCategory={setCategory}/>
+       <FilterPhone category={category} setCategory={setCategory}/>
+       </div>
       <Products category={category}/>
       </div>
      

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Filter = ({ category, setCategory }) => {
-  const categories = ["cake", "cookie", "pie", "pastry", "Your Favorites"];
+  const categories = ["cake", "cookie", "pie", "pastry"];
   console.log(category);
   return (
     <div className="hidden md:flex flex-row items-center w-1/2 justify-between  border-b-bakerzBiteDarkBrown gap-x-[50px]">
@@ -16,7 +16,6 @@ const Filter = ({ category, setCategory }) => {
           <p className="text-[15.5px] text-bakerzBiteDarkBrown ">{item}</p>
         </div>
       ))}
-      <p>{category}</p>
     </div>
   );
 };
