@@ -40,7 +40,7 @@ import pastryThree from './pastryThree.png';
 import pastryFive from './pastryFive.png';
 import pastrySix from './pastrySix.png';
 
-import instagramIcon from './Instagram.png';
+
 import linkedinIcon from './LinkedIn.png';
 
 import merchBag from './merchBag.png';
@@ -56,7 +56,6 @@ import ourProductsFour from './ourProductsFour.png';
 import ourProductsThree from './outProductsThree.png';
 import chocoCake from './chocoCake.png';
 import introPicture from './Rectangle 34.png'
-import facebookIcon from './Facebook.png';
 import profilepic from './Ellipse 1.png'
 
 import pastelDeNata from './Pastel De Nata.svg';
@@ -76,8 +75,6 @@ const randomDiscount = () => (Math.random() > 0.5 ? `${Math.floor(Math.random() 
 // Exporting assets
 export const assets ={
   doubleChocolate,
-  facebookIcon,
-  instagramIcon,
   pastelDeNata,
   pinterestIcon,
   starIcon,

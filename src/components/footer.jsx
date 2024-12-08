@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { LuFacebook, LuInstagram } from "react-icons/lu";
 
 const Footer = () => {
   const footerLinks = [
@@ -40,9 +41,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="grid grid-cols-3 gap-5 mr-8 md:grid-cols-5 lg:gap-12 lg:mr-20">
-          <img src={assets.facebookIcon} alt="" />
+         <LuFacebook className="w-[24px] h-[24px] text-[#272727]"/>
           <img src={assets.linkedinIcon} alt="" />
-          <img src={assets.instagramIcon} alt="" />
+          <LuInstagram className="w-[24px] h-[24px] text-[#272727]"/>
           <img src={assets.githubIcon} alt="" />
           <img src={assets.linkedinIcon} alt="" />
         </div>
