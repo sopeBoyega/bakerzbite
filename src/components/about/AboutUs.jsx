@@ -3,7 +3,8 @@ import logoIcon from '../../assets/logo-icon-2.svg';
 import checkmark from '../../assets/check.svg';
 import image14 from '../../assets/pexels-kampus-6605421.jpg';
 import image15 from '../../assets/pexels-tim-douglas-6205509.jpg';
-
+import "./about.css"
+import { Link } from 'react-router-dom';
 function AboutUs ()
 {
     return (
@@ -43,7 +44,9 @@ function AboutUs ()
                         Over 300+ products to choose from
                     </h2>
 
-                    <button>Shop Now!</button>
+                    <Link
+                    to='/gallery'
+                    className='button'>Shop Now!</Link>
                 </div>
             </div>
         </>
