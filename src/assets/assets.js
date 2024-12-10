@@ -57,6 +57,7 @@ import ourProductsThree from './outProductsThree.png';
 import chocoCake from './chocoCake.png';
 import introPicture from './Rectangle 34.png'
 import profilepic from './Ellipse 1.png'
+import banner from "./banner.png"
 
 import pastelDeNata from './Pastel De Nata.svg';
 import pinterestIcon from './pintrest.png';
@@ -86,7 +87,8 @@ export const assets ={
   introPicture,
   openingQuote,
   closingQuote,
-  profilepic
+  profilepic,
+  banner
 };
 
 export const carousel = [

@@ -26,7 +26,7 @@ function App() {
     <div className="">
 <Navbar visitorCount={visitorCount}/>
 <BottomTicker/>
-<Sidebar listItems={listItems} /> {/* Sidebar Available Globally */}
+<Sidebar listItems={listItems} visitorCount={visitorCount} /> {/* Sidebar Available Globally */}
      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<AboutUs />} />

@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 const Introduction = () => {
   return (
@@ -15,12 +16,13 @@ const Introduction = () => {
             products we produce are guaranteed quality and taste. It’s so
             delicious, you have to try it!
           </p>
-          <p className="lg:text-start">
+          <Link className=""
+           to='/About'>
             Read More{" "}
             <span className="cursor-pointer w-[32px] text-bakerzBiteDarkBrown text-2xl">
               →
             </span>
-          </p>
+          </Link>
         </div>
         <div className=" flex items-center justify-center">
           <img
@@ -42,16 +44,17 @@ const Introduction = () => {
             coffee or tea in our very convenient shop. very suitable for
             chatting, meeting with your team.
           </p>
-          <p className="">
+          <Link className=""
+           to='/About'>
             Read More{" "}
             <span className="cursor-pointer w-[32px] text-bakerzBiteDarkBrown text-2xl">
               →
             </span>
-          </p>
+          </Link>
         </div>
         <div className=" flex items-center justify-center">
           <img
-            src={assets.introPicture}
+            src={assets.banner}
             alt="Our Production"
             className="w-1/2 lg:w-full"
           />

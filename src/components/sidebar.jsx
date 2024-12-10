@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Sidebar = ({ listItems }) => {
+const Sidebar = ({ listItems,visitorCount }) => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
@@ -41,6 +41,7 @@ const Sidebar = ({ listItems }) => {
                 {item}
               </Link>
             ))}
+            <p>Visitor Count: {visitorCount}</p>
           </ul>
         </div>
       </div>

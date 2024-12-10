@@ -12,7 +12,7 @@ const Gallery = () => {
       <p className="font-medium text-center text-[28px] md:text-[30px]">
         Welcome to Our Gallery
       </p>
-      <p className="font-medium lg:w-[721px] h-[79px] w-[500px]  text-[12px]  md:text-[10px] text-center text-black">
+      <p className="font-medium w-[80vw] m-3  lg:w-[721px] h-[79px]  text-[12px]  md:text-[10px] text-center text-black">
         Take a peek at our delicious creations. From classic cakes to artisanal
         breads, we bake with love and passion. Every bite is a taste of our
         dedication to quality and flavor

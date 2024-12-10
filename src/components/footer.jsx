@@ -1,14 +1,27 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import { LuFacebook, LuInstagram } from "react-icons/lu";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
+  
   const footerLinks = [
-    "Site Map",
-    "Gallery",
-    "About Us",
-    "Contact Us",
-    "FAQ Link",
+    {name : "Site Map",
+      url : "https://shorturl.at/Y8gbe"
+    },
+    {name : "Gallery",
+      url : "/gallery"
+    },
+    {name :  "About Us",
+      url : "/About"
+    },
+    {name : "Contact Us",
+      url : "contact"
+    },
+    {name : "FAQ Link",
+      url : "https://shorturl.at/Y8gbe"
+    },
   ];
   return (
     <div className="w-[100vw] flex flex-col mt-[100px] py-[80px]   bg-bakerzBiteLightBrown h-[300px]">
@@ -25,9 +38,9 @@ const Footer = () => {
         </div>
         <ul className="grid grid-cols-2 gap-3 md:grid-cols-3  lg:grid-cols-5 lg:gap-[20px]">
           {footerLinks.map((item, key) => (
-            <li className="font-medium cursor-pointer  text-[10px] hover:underline">
-              {item}
-            </li>
+            <Link to={item.url} className="font-medium cursor-pointer  text-[10px] hover:underline">
+              {item.name}
+            </Link>
           ))}
         </ul>
       </div>
@@ -41,11 +54,16 @@ const Footer = () => {
           </ul>
         </div>
         <div className="grid grid-cols-3 gap-5 mr-8 md:grid-cols-5 lg:gap-12 lg:mr-20">
-         <LuFacebook className="w-[24px] h-[24px] text-[#272727]"/>
-          <img src={assets.linkedinIcon} alt="" />
-          <LuInstagram className="w-[24px] h-[24px] text-[#272727]"/>
-          <img src={assets.githubIcon} alt="" />
-          <img src={assets.linkedinIcon} alt="" />
+          <LuFacebook className="w-[24px] h-[24px] text-[#272727]" />
+          <Link to="https://www.instagram.com/s._.ope/">
+            <LuInstagram className="w-[24px] h-[24px] text-[#272727]" />
+          </Link>
+          <Link to="https://github.com/sopeBoyega">
+            <img src={assets.githubIcon} alt="" />
+          </Link>
+          <Link to="https://www.linkedin.com/in/mosope-adegboyega-16812a26a/">
+            <img src={assets.linkedinIcon} alt="" />
+          </Link>
         </div>
       </div>
     </div>
