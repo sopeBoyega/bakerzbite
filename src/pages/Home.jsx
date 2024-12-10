@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../components/home/Header'
 import Products from '../components/home/featured-products'
 import Introduction from '../components/home/intro'
 import Merchandise from '../components/home/merchandise'
 import Reviews from '../components/home/reviews'
+import countapi from "countapi-js"
 const Home = () => {
+
+
   return (
   <>
   <Header/>

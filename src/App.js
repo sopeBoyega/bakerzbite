@@ -8,13 +8,23 @@ import Gallery from './pages/gallery';
 import Footer from './components/footer';
 import Sidebar from './components/sidebar';
 import BottomTicker from './components/home/scrolling-ticker';
+import { useEffect, useState } from 'react';
 
 function App() {
 
   const listItems = ["Home", "Gallery", "About", "Contact"];
+  const [visitorCount, setVisitorCount] = useState(null);
+
+  useEffect(() => {
+      fetch('https://countapi-p42r.onrender.com/api/visitor-count')
+          .then((response) => response.json())
+          .then((data) => setVisitorCount(data.count))
+          .catch((err) => console.error('Error fetching visitor count:', err));
+  }, []);
+  
   return (
     <div className="">
-<Navbar/>
+<Navbar visitorCount={visitorCount}/>
 <BottomTicker/>
 <Sidebar listItems={listItems} /> {/* Sidebar Available Globally */}
      <Routes>

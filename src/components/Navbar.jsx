@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 import { list } from "postcss";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({visitorCount}) => {
   const listItems = ["Home", "Gallery", "About", "Contact"];
 
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
       <div className=" hidden lg:flex flex-row items-center justify-center mr-10 mb-3">
-        <p className=" font-light text-center text-[10px]">Visitor's Count:</p>
+        <p className=" font-light text-center text-[10px]">Visitor's Count:{visitorCount}</p>
       </div>
     </div>
   );
