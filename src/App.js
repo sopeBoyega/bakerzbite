@@ -16,6 +16,7 @@ function App() {
   const [visitorCount, setVisitorCount] = useState(null);
   const [location, setLocation] = useState("Fetching Location ...");
   const [visitorAdded, setVisitorAdded] = useState(false); // Add a state to track if visitor is added
+  const URL = "https://foodproj-backend-4y4z.onrender.com";
 
   // Sends a request to our Count API then returns a response with the current Visitor Count
   useEffect(
@@ -55,7 +56,7 @@ function App() {
   const addVisitor = async () => {
 try {
   console.log(location)
-  const response = await axios.post("http://localhost:4000/api/visitorCount/add",{location: location})
+  const response = await axios.post(`${URL}/api/visitorCount/add`,{location: location})
 } catch (error) {
   console.error("Error Adding user :" ,error)
 }
@@ -64,7 +65,7 @@ try {
 
   const getTotalVisitors = async () => {
     try {
-      const response =  await axios.get("http://localhost:4000/api/visitorCount/list")
+      const response =  await axios.get(`${URL}/api/visitorCount/list`)
       console.log(response.data.data);
       setVisitorCount(response?.data?.data)
     } catch (error) {
