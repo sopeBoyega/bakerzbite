@@ -44,7 +44,7 @@ const Navbar = ({visitorCount}) => {
 
 
       <div className=" hidden lg:flex flex-row items-center justify-center mr-10 mb-3">
-        <p className=" font-light text-center text-[10px]">Visitor's Count:{visitorCount}</p>
+        <p className=" font-light text-center text-[10px]">Visitor's Count:{!visitorCount ? "Loading" : visitorCount}</p>
       </div>
     </div>
   );

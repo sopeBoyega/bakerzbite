@@ -1,25 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-const BottomTicker = () => {
-  const [location, setLocation] = useState("Fetching location...");
+const BottomTicker = ({location}) => {
+
   const [dateTime, setDateTime] = useState("");
 
   // Get user's location using Geolocation API
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          setLocation(`Lat: ${latitude.toFixed(2)}, Lon: ${longitude.toFixed(2)}`);
-        },
-        (error) => {
-          setLocation("Unable to fetch location.Please Connect to the Internet or Allow the site to use your Location");
-        }
-      );
-    } else {
-      setLocation("Geolocation not supported");
-    }
-  }, []);
+ 
 
   // Update date and time dynamically
   useEffect(() => {
